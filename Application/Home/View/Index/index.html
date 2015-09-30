@@ -1,0 +1,28 @@
+<include file="Public/header" />
+<div id="leftpart">
+	<ul id="menu">
+<volist name="menus" id="menu">
+		<li>
+			<a href="javascript: void(0);">{$menu['title']}</a>
+			<ul>
+<volist name="menu['submenu']" id="submenu">
+			<li><a href="{$submenu['url']}">{$submenu['title']}</a></li>
+</volist>
+			</ul>
+		</li>
+</volist>
+	</ul>
+	<div class="toggle show">
+	</div>
+</div>
+<div id="middlepart">
+	<iframe id="middle" name="middle" frameborder="0" scroll="auto"></iframe>
+	<div class="toggle show">	
+	</div>
+</div>
+<div id="rightpart">
+	<iframe id="right" name="right" frameborder="0" scroll="auto"></iframe>
+	<div class="toggle show">
+	</div>
+</div>
+<include file="Public/footer" />

@@ -1,0 +1,64 @@
+body{
+	color: #333;
+	font-size: 13px;
+	font-family: "微软雅黑";
+}
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family:"微软雅黑";
+}
+div {
+	font-weight: normal;
+	overflow: hidden;
+	line-height: 24px;
+}
+a{
+	text-decoration: none;
+}
+table{
+	border-collapse: collapse;
+}
+a:hover {
+	color: #c00;
+}
+a:focus{
+	outline: none;
+}
+li{
+	list-style-type: none;
+}
+
+#logForm{
+	width: 300px;
+	margin: 50px auto;
+}
+
+#logForm dl dt, #logForm dl dd{
+	float: left;
+	line-height: 30px;
+}
+
+#logForm dl dd{
+	width: 220px;
+}
+
+#logForm dl dd input{
+	border: 1px solid #333;
+	background: #fafafa;
+	width: 120px;
+	height: 20px;
+}
+
+#logForm dl dd input[type=button]{
+	width: 60px;
+	text-align: center;
+}
+
+#logForm dl dt{
+	clear: both;
+	width: 60px;
+	text-align: right;
+	margin-right: 10px;
+}

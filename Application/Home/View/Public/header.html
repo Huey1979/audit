@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>{$siteInfo['title']}</title>
+		<link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+<if condition="isset($cssFiles)">
+<volist name="cssFiles" id="file">
+		<link rel="stylesheet" type="text/css" href="/static/css/{$file}" />
+</volist>
+</if>
+		<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+<if condition="isset($jsFiles)">
+<volist name="jsFiles" id="file">
+		<script type="text/javascript" src="/static/js/{$file}"></script>
+</volist>
+</if>
+	</head>
+	<body>
